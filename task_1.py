@@ -3,5 +3,6 @@ print(nums)
 nums2 = int
 age = 35
 name = Vladimir 
+name = new
 
 
