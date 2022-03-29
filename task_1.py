@@ -31,4 +31,4 @@ while(i < 7):
     i += 1 #увеличиваем счечик итераций что бы цикл остановился на условии i < 7
 
 if counter > 3: #в условии сказано 7 проверок, значит 4 проверки это уже больше половины
-    print(f'Fourth iteration random numbers: {num_list}') #выводим список рандомных чисел из 4 итерации
+    print(f'Fourth iteration random numbers: {num_list}')
