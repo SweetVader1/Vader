@@ -32,3 +32,27 @@ while(i < 7):
 
 if counter > 3: #в условии сказано 7 проверок, значит 4 проверки это уже больше половины
     print(f'Fourth iteration random numbers: {num_list}')
+
+
+
+# Посчитать, сколько раз встречается определенная цифра в числах. Количество
+# введенных чисел и искомая цифра задаются с клавиатуры. Числа выбираются
+# рандомно.
+
+desired_figure = input('Enter desired figure: ') #искомое число
+iter_count = int(input('Type number of checks: ')) #количество проверок
+check_number = 0 #номер проверки
+
+while check_number < iter_count: #пока номеро проверки меньше введенного количества проверок
+    if int(desired_figure) > 9: #если число больше 9 т.е. неверное, остановливаем программу
+        print('Incorrect figure')
+        break
+    counter = 0 #счетчик совпадений цифры в числе
+    number = input('Please enter the number: ') #вводим рандомное число
+    for sym in number: # т.к. введенный инпут всегда строка то пробегаемся по ней посимвольно без преобразований
+        if sym == desired_figure: #если символ совпадает с тем что мы ввели вначале увеличиваем счетчик совпадений
+            counter += 1
+    print(f'The number of matches in the number: {counter}')
+    check_number += 1 #увеличиваем счетчик проверок что бы остановить цикл когда условие while будет false, т.е. счетчик превысит количество введенных проверок
+
+
